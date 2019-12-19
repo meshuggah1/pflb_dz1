@@ -1,11 +1,71 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite1" verbose="1" >
-    <test name="Nopackage" >
+<suite name="tests" parallel="tests" thread-count="5">
+    <test name="testDecimalToBinaryPos" >
         <classes>
             <class name="ru.kudryavcev_kb.dz_1.TestMain">
                 <methods>
+                    <include name="testDecimalToBinaryPos"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 
+    <test name="testDecimalToBinaryNeg" >
+        <classes>
+            <class name="ru.kudryavcev_kb.dz_1.TestMain">
+                <methods>
+                    <include name="testDecimalToBinaryNeg"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="testDecimalToHex" >
+        <classes>
+            <class name="ru.kudryavcev_kb.dz_1.TestMain">
+                <methods>
+                    <include name="testDecimalToHex"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="testDecimalToHexNeg" >
+        <classes>
+            <class name="ru.kudryavcev_kb.dz_1.TestMain">
+                <methods>
+                    <include name="testDecimalToHexNeg"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="testBinaryToOCtal" >
+    <classes>
+        <class name="ru.kudryavcev_kb.dz_1.TestMain">
+            <methods>
+                <include name="testBinaryToOCtal"/>
+            </methods>
+        </class>
+    </classes>
+    </test>
+
+    <test name="testValidateNum" >
+        <classes>
+            <class name="ru.kudryavcev_kb.dz_1.TestMain">
+                <methods>
+                    <include name="testValidateNum"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="testValidateNumNeg" >
+        <classes>
+            <class name="ru.kudryavcev_kb.dz_1.TestMain">
+                <methods>
+                    <include name="testValidateNumNeg"/>
                 </methods>
             </class>
         </classes>
